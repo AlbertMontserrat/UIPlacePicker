@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAx-wx-4mw">
+                                <rect key="frame" x="184" y="135" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AAx-wx-4mw" secondAttribute="height" multiplier="118:15" id="XX4-ex-Ff7"/>
+                                    <constraint firstAttribute="height" constant="30" id="lpj-al-PBF"/>
+                                    <constraint firstAttribute="width" secondItem="AAx-wx-4mw" secondAttribute="height" multiplier="118:15" id="wHi-dH-WjK"/>
+                                    <constraint firstAttribute="width" constant="236" id="y3q-df-ykc"/>
+                                </constraints>
+                                <state key="normal" title="Pick new location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XX4-ex-Ff7"/>
+                                        <exclude reference="wHi-dH-WjK"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="pickPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPc-0e-ryN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF7-Ba-bl0">
+                                <rect key="frame" x="184" y="285" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="8QV-6A-k56"/>
+                                    <constraint firstAttribute="height" constant="30" id="E80-AG-G5l"/>
+                                    <constraint firstAttribute="width" secondItem="LF7-Ba-bl0" secondAttribute="height" multiplier="118:15" id="Ucu-nh-uBl"/>
+                                    <constraint firstAttribute="width" secondItem="LF7-Ba-bl0" secondAttribute="height" multiplier="118:15" id="eR3-fs-ZSs"/>
+                                </constraints>
+                                <state key="normal" title="View location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ucu-nh-uBl"/>
+                                        <exclude reference="eR3-fs-ZSs"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showPlace:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAn-iV-w0s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORh-Sz-cAe">
+                                <rect key="frame" x="184" y="435" width="236" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ORh-Sz-cAe" secondAttribute="height" multiplier="118:15" id="KLf-Rn-yPi"/>
+                                    <constraint firstAttribute="height" constant="30" id="WA2-ZF-FeO"/>
+                                    <constraint firstAttribute="width" constant="236" id="b53-eD-s5D"/>
+                                    <constraint firstAttribute="width" secondItem="ORh-Sz-cAe" secondAttribute="height" multiplier="118:15" id="oiB-TK-nHr"/>
+                                </constraints>
+                                <state key="normal" title="View location (Visitor mode)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KLf-Rn-yPi"/>
+                                        <exclude reference="oiB-TK-nHr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showPlaceVisitor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx0-fa-fLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="LF7-Ba-bl0" secondAttribute="centerX" id="BKI-1n-2xR"/>
+                            <constraint firstAttribute="centerY" secondItem="AAx-wx-4mw" secondAttribute="centerY" id="EM4-Ba-ze9"/>
+                            <constraint firstAttribute="centerX" secondItem="ORh-Sz-cAe" secondAttribute="centerX" id="JlS-Y6-fp2"/>
+                            <constraint firstAttribute="centerX" secondItem="AAx-wx-4mw" secondAttribute="centerX" id="MQ0-5q-7EQ"/>
+                            <constraint firstAttribute="centerX" secondItem="AAx-wx-4mw" secondAttribute="centerX" id="S1Y-fd-rp6"/>
+                            <constraint firstItem="AAx-wx-4mw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.25" id="eOs-Hb-I6c"/>
+                            <constraint firstItem="ORh-Sz-cAe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.75" id="h31-IW-x9A"/>
+                            <constraint firstItem="LF7-Ba-bl0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="bottom" multiplier="0.5" id="hF7-K5-nCQ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EM4-Ba-ze9"/>
+                                <exclude reference="S1Y-fd-rp6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="buttonNew" destination="AAx-wx-4mw" id="fl0-vl-AWl"/>
+                        <outlet property="buttonView" destination="LF7-Ba-bl0" id="t2d-Nw-dBw"/>
+                        <outlet property="buttonViewVisitor" destination="ORh-Sz-cAe" id="Q9a-66-SEH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="418"/>
+        </scene>
+    </scenes>
+</document>
