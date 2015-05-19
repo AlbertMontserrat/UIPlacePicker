@@ -12,20 +12,24 @@
 	<dict>
 		<key>3C4AE9E92365565D7A258F88D2347CC3A656671D</key>
 		<string>https://github.com/AlbertMontserratGambus/UIPlacePicker.git</string>
+		<key>E0FE176950E3B60C99868FC53FD5D712EDF45769</key>
+		<string>https://github.com/AlbertMontserrat/UIPlacePicker/</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>UIPlacePickerDemo/UIPlacePickerDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3C4AE9E92365565D7A258F88D2347CC3A656671D</key>
+		<string>../../../../UIPlacePicker</string>
+		<key>E0FE176950E3B60C99868FC53FD5D712EDF45769</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AlbertMontserratGambus/UIPlacePicker.git</string>
+	<string>https://github.com/AlbertMontserrat/UIPlacePicker/</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3C4AE9E92365565D7A258F88D2347CC3A656671D</string>
+	<string>E0FE176950E3B60C99868FC53FD5D712EDF45769</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>3C4AE9E92365565D7A258F88D2347CC3A656671D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>UIPlacePicker</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E0FE176950E3B60C99868FC53FD5D712EDF45769</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UIPlacePicker3</string>
 		</dict>
 	</array>
 </dict>
